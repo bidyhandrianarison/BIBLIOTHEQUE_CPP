@@ -29,7 +29,8 @@ void Activation::verifyActivation(string code)
     	else 
     	{
         int freeTrials = 30;
-        while (freeTrials > 0 && code!= serialCode) {
+        while (freeTrials > 0 && code!= serialCode) 
+	{
             cout << "Code d'activation invalide. Vous avez " << freeTrials << " essais restants." << endl;
             cout << "Entrez votre code d'activation : ";
             cin >> code;
@@ -42,6 +43,7 @@ void Activation::verifyActivation(string code)
 
     }
 }
-bool Activation::getStatus(){
+bool Activation::getStatus()
+{
 	return status;
 }
